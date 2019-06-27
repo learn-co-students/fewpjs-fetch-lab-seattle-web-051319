@@ -25,7 +25,7 @@ describe( "index.js", () => {
       chai.spy.on( window, 'renderBooks' );
       await fetchBooks().then(() => {
         expect( window.renderBooks ).to.have.been.called();
-      })
+       })
     } )
   } )
 })
